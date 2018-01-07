@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Schedule || Marie Dagan</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="assets/javascript/logic.js"></script>
+  <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <div class="jumbotron" id="titleDiv">
+      <h1 class="text-center">All Aboard</h1>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Train</th>
+          <th>Destination</th>
+          <th>How Often</th>
+          <th>Next Train</th>
+          <th>Time Till Arrivals</th>
+        </tr>
+      </thead>
+      <tbody id="Train-Schedule" id="schedule">
+      </tbody>
+    </table>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add a Train</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="Name" type="text">
+              </div>
+              <div class="form-group">
+                <label for="destination">Destination</label>
+                <input class="form-control" id="destination" type="text">
+              </div>
+              <div class="form-group">
+                <label for="arrival">Arrival (i.e. 22:15)</label>
+                <input class="form-control" id="arrival" type="text">
+              </div>
+              <div class="form-group">
+                <label for="frequency">Frequency</label>
+                <input class="form-control" id="frequency" type="number">
+              </div>
+              <button class="btn btn-primary" id="newTrain" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
